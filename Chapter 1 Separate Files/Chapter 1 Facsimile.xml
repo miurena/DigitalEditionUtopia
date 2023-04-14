@@ -3,7 +3,6 @@
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="Schema%20Utopia.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <!-- In this edition, you introduce each version of the text  -->
   <teiHeader>
      <!-- essential -->
       <fileDesc>
