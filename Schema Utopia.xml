@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title></title>
+                <author></author>
+            </titleStmt>
+            <publicationStmt>
+                <p></p>
+            </publicationStmt>
+            <notesStmt>
+                <note type="ns"></note>
+            </notesStmt>
+            <sourceDesc>
+                <p></p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <divGen type="toc"/>
+        </front>
+        <body>
+            <p></p>
+            <schemaSpec ident="utopia" docLang="en" prefix="tei_utopia" xml:lang="en">
+                <moduleRef key="core"
+                    except="address analytic binaryObject cb citedRange divGen emph gap gb gloss imprint index measureGrp media meeting mentioned monogr postBox postCode ptr rb relatedItem rt ruby said series soCalled sp stage street teiCorpus term textLang time unclear"/>
+                <moduleRef key="tei"/>
+                <moduleRef key="header"
+                    except="abstract appInfo application authority cRefPattern catDesc catRef category classCode classDecl conversion correspAction correspContext correspDesc distributor extent geoDecl handNote interpretation keywords listPrefixDef prefixDef refState refsDecl rendition scriptNote seriesStmt sponsor stdVals styleDefDecl taxonomy textClass unitDecl unitDef xenoData"/>
+                <moduleRef key="textstructure"
+                    except="argument back byline closer dateline div1 div2 div3 div4 div5 div6 div7 floatingText opener postscript salute titlePage titlePart trailer TEI"/>
+                <moduleRef key="verse" except="caesura metSym"/>
+                <moduleRef key="transcr"
+                    except="addSpan am damage damageSpan delSpan ex handNotes handShift line listTranspose metamark path redo restore retrace secl space substJoin supplied surplus transpose undo zone"/>
+                <moduleRef key="textcrit"
+                    except="lacunaEnd lacunaStart listWit rdgGrp variantEncoding wit witDetail witEnd witStart witness"/>
+                <moduleRef key="namesdates"
+                    except="addName age bloc climate district education faith floruit genName gender geo geogFeat geogName langKnowledge langKnown listNym listObject listOrg location nameLink nationality nym object objectIdentifier objectName offset org orgName persPronouns persona population residence settlement sex socecStatus state terrain trait"/>
+                <moduleRef key="gaiji" except="g glyph mapping unihanProp"/>
+                <moduleRef key="linking" include="ab"/>
+                <elementSpec module="textstructure" ident="group" mode="change">
+                    <altIdent>paratexts</altIdent>
+                </elementSpec>
+                <elementSpec module="textstructure" ident="front" mode="change">
+                    <altIdent>paratexts</altIdent>
+                </elementSpec>
+            </schemaSpec>
+        </body>
+    </text>
+</TEI>
