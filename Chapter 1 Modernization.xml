@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="Schema%20Utopia.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <!-- In this edition, you introduce each version of the text  -->
+  <teiHeader>
+     <!-- essential -->
+      <fileDesc>
+         <!-- essential -->
+         <titleStmt>
+            <!-- essential -->
+            <title>A Digital Edition of the 1637 Spanish translation of Thomas More's Utopia</title>
+            <editor> M.ª Inmaculada Ureña Asensio</editor>
+         </titleStmt>
+         <!-- essential -->
+         <publicationStmt>
+            <!-- essential -->
+            <p>Publication Information</p>
+         </publicationStmt>
+         <!-- essential -->
+         <sourceDesc>
+            <!-- essential -->
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div type="Chapter" n="1">
+            <head type="title"> Relación que hizo Rafael Hithlodeo, excelente varón, del feliz
+               estado de la república de Utopia, ordenada por Thomas Moro, vizconde, ciudadano de
+               la insigne ciudad de Londres en Inglaterra. </head>
+            <head type="chapter"> Descripción de la isla. Capítulo I </head>
+            <!-- I use <ab> because the text do not use paragraphs; then I do not transcribe line by line -->
+            <ab>
+               <pb n="I"/> La Isla de los Utopienses en el medio se extiende a doscientos mil
+               pasos, y por larguísimo espacio no se estrecha considerablemente; mas al fin de <app>
+                  <lem/>
+                  <!--original text-->
+                  <!-- should I use @wit instead of @type? -->
+                  <rdg type="modernization">entre ambos cabos</rdg>
+                  <rdg type="1790">entrambos cados</rdg>
+                  <rdg type="1805">=</rdg>
+               </app> se va <app>
+                  <lem/>
+                  <rdg type="modernization">ensangostando,</rdg>
+                  <rdg type="1790">angostando</rdg>
+                  <rdg type="1805">=</rdg>
+               </app> y estas puntas en circunferencia de cincuenta mil pasos dejan la Isla en
+               forma de Luna nueva. Estas extremidades combatidas del mar se hallan distantes la
+               una de la otra otros once mil y el mar defendido de los vientos. Entre estos
+               brazos forma un apacible lago, dejando un puerto acomodado desde donde, por su
+               oportunidad, envían sus flotas a otras provincias y países. Las gargantas de las
+               entradas de la una parte con los bancos y bados y de la otra, con disimulados
+               escollos, ponen espanto al que pretende entrar como enemigo. Casi en el medio de
+               este espacio se ve otra roca no tan peligrosa, en cuya eminencia han fabricado un
+               fuerte, donde tienen presidio. Hállanse otros muchos escollos ocultos, y por esto
+               dañosos. Ellos solamente tienen conocimiento de aquellos canales de donde procede
+               que raras veces el extranjero que no sea avisado de alguno de la Utopía pueda
+               penetrallos, y cuando con afán entre sin riesgo, no gobernándose por ciertas guías
+               puestas en la ribera, vendrá cualquier gran enemiga armada a dar al través. De la
+               otra parte, hay un puerto bastantemente frecuentado y el desembarcadero
+               fortificado por arte y naturaleza, de manera que poca gente de guerra pondrán en
+               retirada y rebatirán el ímpetu de copioso ejército. Hay opinión (y la apariencia
+               del lugar lo muestra) que aquella tierra en lo antiguo estaba rodeada del mar. Mas
+               Utopo, de quien tomó nombre la Isla por haberla conquistado (porque primero se
+               llamaba Abraxa), redujo aquella muchedumbre rústica y grosera a esta manera de
+               vivir humana y civil, cual sigue todo el linaje de los hombres. Cortó un istmo de
+               diez mil pasos por el cual estaba Utopía continente con la tierra firme, con que
+               quedó hecha Isla. Habiendo constreñido no solo a los moradores antiguos, mas
+               también a sus soldados, por no causar afrenta a aquellos. Y con tanto número de
+               operarios en brevísimo tiempo acabó el trabajo, dejando admirados los pueblos
+               vecinos, que al principio burlaban del intento. Hay en esta Isla cincuenta y
+               cuatro ciudades, conformes en lengua, institutos, y leyes, y casi a un modelo
+               fabricadas, en cuanto el sitio lo permite. Las más cercanas están desviadas
+               veinticuatro mil pasos, mas ninguna se halla tan apartada una de otra, que en un
+               día no pueda hacer jornada a ellas un peón. Tres ciudadanos expertos y ancianos de
+               cada una destas ciudades todos los años concurren en Amauroto, la cual, por estar
+               asentada en medio de la Isla, es a todos cómoda y tenida por principal y cabeza,
+               donde tratan de la causa común y pública de toda la Utopía. Las ciudades no tienen
+               de término pasados de veinte mil pasos en contorno, algunas más, conforme están
+               desviadas y apartadas más o menos entre sí, ninguna dellas desea extender, o
+               dilatar su distrito, juzgándose antes usufructuarios labradores de los campos que
+               señores dellos. Tienen alquerías muy prevenidas</ab>
+            </div>
+      </body>
+  </text>
+</TEI>

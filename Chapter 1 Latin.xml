@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="Schema%20Utopia.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <!-- In this edition, you introduce each version of the text  -->
+  <teiHeader>
+     <!-- essential -->
+      <fileDesc>
+         <!-- essential -->
+         <titleStmt>
+            <!-- essential -->
+            <title>A Digital Edition of the 1637 Spanish translation of Thomas More's Utopia</title>
+            <editor> M.ª Inmaculada Ureña Asensio</editor>
+         </titleStmt>
+         <!-- essential -->
+         <publicationStmt>
+            <!-- essential -->
+            <p>Publication Information</p>
+         </publicationStmt>
+         <!-- essential -->
+         <sourceDesc>
+            <!-- essential -->
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div type="Chapter" n="1">
+            <head type="title">
+               <!-- Shall I preserve the original line breaking and spelling? -->
+               <lb/>SERMONIS QVEM <lb/>RAPHAEL HYTHLODAEVS DE OPTI <lb/>MO REIP. STATV HABVIT, LI
+               <lb/>BER SECVNDVS, PER THO <lb/>MAM MORVM CIVEM <lb/>ET VICECOMITEM
+               <lb/>LONDINENSEM. </head>
+            <head type="chapter"> *No title* </head>
+            <pb n="115"/>
+            <!-- page book from the original edition = Lupton 1985 p. 115 -->
+            <ab> VTOPIENSIVM INSVLA in media sui parte (nam hac latissima est) millia passuum
+               ducenta porrigitur, magnumque per insulae spatium non multo angustior, fines
+               uersus paulatim utrinque <pb n="116"/> tenuatur. hi uelut circunducti circino
+               quingentorum ambitu millium, insulam totam in lunae speciem renascentis effigiant.
+               <!-- what about marginalia? Situs et forma Vtopiae nouae insulae--> Cuius cornua
+               fretum interfluens millibus passuum plus minus undecim dirimit, ac per ingens
+               inane diffusum, circumiectu undique terrae prohibitis uentis, uasti in morem
+               lacus, stagnans magis quam saeuiens, omnem prope eius terrae aluum pro portu
+               facit, magnoque hominum usu naues quaqua uersus transmittit. fauces | hinc uadis
+               inde saxis formidolosae. <pb n="117"/> In medio ferme interstitia una rupes
+               eminet, eoque innoxia, cui inaedificatam turrim praesidio tenent: caeterae
+               latentes et insidiosae. Canales solis ipsis noti ; atque ideo non Locu natlll'll
+               tu- anico prae. temere accidit ut exterus quisquam hunc in sinum, udio defenditar.
+               nisi Vtopiano duce, penetret; ut in quem uix ipsis tutus ingressus est, nisi
+               signis quibusdam e litore uiam regentibus. His in diuersa translatis loca, hos-
+               Stratacema rs matati81igniL tium quamlibet numerosam classem facile in pemiciem
+               traherenL Ab altera parte non infrequentes portus. At ubique • <pb n="118"/>
+               descensus in terram ita natura munitus, aut arte, uta ingentes copiae paucis inde
+               queant propugnatoribus arceri. Caeterum, uti fertur, utique ipsa loci facies prae
+               se fert, ea tellus olim non ambiebatur mari. Sed Vtopus, cuius utpote uictoris
+               nomen Vtopia i~t~~~la ab Vtopoda~. refert insula (nam ante id tempus Abru.a
+               dicebatur) quique rudem atque agrestem turbam ad id, quo nunc caeteros prope
+               mortales antecellit, cultus Hoc: plu ..,...t qum humanitatisql!e perduxit, primo
+               protinus appulsu lothmDm perfodere. uictoria potitus, passuum milia quindecim, qua
+               parte Facile fertlll' q"od tell us continenti adhaesit, exscindend\Jm curauit, ac
+               omnibaac:omm""e e.t.• nla.re circum terram duxit. Quumque ad id operis non incolas
+               modo coegisset (ne contumeliae loco laborem ducerent) <pb n="119"/> sed suos
+               praeterea milites omnes adiungeret, in tantam hominum multitudinem opere
+               distributo, incredibili celeritate res perfecta ; finitiinosque • (qui initio
+               uanitatem incoepti riserant) admiratione: successus ac terrore perculerit. . 70
+               Insula ciuitates habet I quatuor et quinquaginta, OppidaVtopiaelnsula~. [ 721
+               spatiosas omnes ac magnificas, lingua, moribus, in- Similitudo concor· stitutis,
+               legibus prorsus iisdem. idem situs omnium, diam faciL eadem ubique quatenus per
+               locum licet rerum facies. Harum quae pro:x:imae inter sunt b, millia quatuor
+               Vrbham inter..,....,. diocre intenuallllm. ac uiginti separant. Nulla rursus est
+               tam deserta, • e qua non ad aliam urbem pedibus queat unius ·itinere diei
+               perueniri. Ciues quaque ex urbe terni senes ac rerum periti tractatum de <pb
+                  n="120"/> rebus insulae communibus quotannis conueniunt Amaurotum. Nam ea urbs
+               (quod tanquam in umbilico terrae sita maxime iacet omnium partium legatis
+               opportuna) prima princepsque l>islriblltio qronam. habetur. Agri ita commode
+               ciuitatibus assignati sunt, ut ab nulla parte minus soli quam Xi: a passuum millia
+               una quaeuis habeat, ab aliqua multo etiam amplius ; uidelicet qua parte At hine
+               hodie pestito longius urbes inter se disiunguntur. </ab>
+            </div>
+      </body>
+  </text>
+</TEI>
