@@ -1,104 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="Schema%20Utopia.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
-     <!-- essential -->
+   <teiHeader>
       <fileDesc>
-         <!-- essential -->
          <titleStmt>
-            <!-- essential -->
             <title>A Digital Edition of the 1637 Spanish translation of Thomas More's Utopia</title>
             <editor> M.ª Inmaculada Ureña Asensio</editor>
          </titleStmt>
-         <!-- essential -->
          <publicationStmt>
-            <!-- essential -->
-            <p>Publication Information</p>
+            <p>Encoding Chapter 1 for my thesis dissertation</p>
          </publicationStmt>
-         <!-- essential -->
          <sourceDesc>
-            <!-- essential -->
-            <p>Information about the source</p>
+            <p>The bibliographical resources are:
+               Utopia de Thomas Moro (1637) translated by Gerónimo de Medinilla. 
+               The Utopia of Sir Thomas More (1895) edited by Joseph Lupton. Bilingual edition (Latin and sixteenth-century English translation)</p>
          </sourceDesc>
       </fileDesc>
-  </teiHeader>
+   </teiHeader>
   <text>
       <body>
-         <div type="Chapter" n="1">
             <head type="title">
-               <pb/>
-               <!-- Lupton 1985 p. 115 -->
-               <lb/>The second <lb/>Boke of the communication <lb/>of Raphael Hythlodaye,
-               concernyng <lb/>the best state of a common wealthe: con- <lb/>teynyng the
-               discription of Vtopia, <lb/>with a large declaration of the <lb/>Godly
-               gouernement, and of <lb/>all the good lawes and <lb/>orders of the same
-               <lb/>Ilande. </head>
-            <head type="chapter"> *No title* </head>
-            <pb n="115"/>
-            <p>
-               <!-- PARAGRAPHS --> The Ilande of Vtopia conteyneth in breadthe in the myddell
-               part of it (for there it is brodest) CC. miles. Whiche bredthe continueth through
-               the moste parte of the Iande, sauyng that by lytle and lytle it commeth in and <pb
-                  n="116"/>
-               <!-- PARAGRAPHS  --> waxeth narrower towardes both the endes. Whiche fetch- ynge
-               about a circuite or compasse of .v.c. myles, do fas- sion the hole Ilande lyke to
-               the newe mone. Betwene thys two corners the sea runneth in, diuydyng them a sonder
+               <pb/> The second Boke of the communication of Raphael Hythlodaye,
+               concernyng the best state of a common wealthe: conteynyng the
+               discription of Vtopia, with a large declaration of the Godly
+               gouernement, and of all the good lawes and orders of the same Ilande. </head>
+         <div type="Chapter" n="1">
+            <head type="chapter"> <!-- no title --></head>
+            <p> <seg n="1.1"> The Ilande of Vtopia conteyneth in breadthe in the myddell
+               part of it (for there it is brodest) CC. miles. </seg> <seg n="1.2"> Whiche bredthe continueth through
+               the moste parte of the Iande, sauyng that by lytle and lytle it commeth in and 
+                waxeth narrower towardes both the endes. Whiche fetchynge
+               about a circuite or compasse of .v.c. myles, do fassion the hole Ilande lyke to
+               the newe mone. </seg> <seg n="1.3"> Betwene thys two corners the sea runneth in, diuydyng them a sonder
                by the distaunce of .xi. miles or there aboutes, and there surmounteth into a
-               large and wyde sea 3, which, by reason that the Iande of euery syde compasseth it
-               about, and shiltreth it from the windes, is not rough nor mountith not with great
-               waues, but almost floweth quietlye, not muche vnlike a great standing powle ; and
-               maketh almoste al the space within the bellye of the Iande in maner of a hauen;
-               and to the great commoditie of the Inhabitauntes receaueth in shyppes towardes
-               euery parte of the lande. The forefrontes or frontiers of the .ii. corners, what
-               wythe fordys and shelues, and what with rockes, be very ieoperd- ous and
-               daungerous. In the middel distaunce betwene <pb n="117"/> them both standeth vp
-               aboue the water a great rocke, which therfore is nothing perillous bicause it is
-               in sight. Vpon the top of this rocke is a faire and a strong towre builded, which
-               thei holde with a garison of men. Other rockes ther be, that lye • hidde vnder the
-               water, and b therefore be daungerous. The channelles be knowen onely to
-               themselfes. An 1 therfore it seldome chaunceth that any straunger, oneles he be
-               guided by a Vtopian, can come in to this hauen. In so muche that they themselfes
-               could skaselie entre without ieoperdie, but that their way is directed and ruled
-               by certaine Iande markes standing on the shore. By turning, translatynge 2, and
-               remouinge this markes into other places, they maye destroye their enemies nauies,
-               be thei neuer so many 1• ·The out side ofo the Iande is also full of hauens; but
-               the landing is so surely <pb n="118"/> defenced •, what by nature and what by
-               workmanshyp of mans hande, that a fewe defenders maye dryue backe many armies. </p>
-            <p> Howbeit, as they saye, and as the fassion of the place it selfe doth partely
-               shewe, it was not euer compassed about with the sea. But kyng Vtopus, whose name
-               as con· querour the Iland beereth (for before that b tyme it was called Abraxa 1),
-               which also brought the rude and wild people to that excellent perfection, in al
-               good fassions, humanitie, and ciuile gentilnes, wherin they now go be· yond al the
-               people of the world ; euen at his first arriuinge and enteringe vpon the lande,
-               furth with obteynynge the victory caused .xv. myles space of vplandyshe grounde,
-               where the sea had no passage, to be cut and dygged vp ; and so brought the sea
-               rounde aboute the lande. He set to thys worke not only the inhabitauntes of the
-               Ilande (because they should not thynke it done in contumelye and <pb n="119"/>
-               despyte), but also all hys owne soldiours. Thus the worke, beyng diuyded into so
-               great a numbre of workemen, was with exceding maruelous spede dyspatched. In so
-               muche that the borderers, whiche at the fyrst began to mocke and to gieste at thys
-               vayne enterpryse, then turned theyr laughter to marueyle at the successe, and to
-               feare. </p>
-            <p> There be in the Ilande .liiii.1 large and faire cities or shiere townes, agreyng
-               all together in one tonge, in lyke maners, institucions, and Iawes. They be all
-               set and situate a lyke, and in all poyntes fashioned a lyke, as farfurth as the
-               place or plotte suffereth. Of thies cyties they that be nighest together be
-               xxiiii. myles a sonder. Again there is none of them distaunt from the next aboue
-               one dayes iorneye a fote. </p>
-            <p> There cum yearly to Amaurote out of euery cytie .iii. olde men, wyse and well
-               experienced, there to entreate and <pb n="120"/> debate of the common matters of
-               the Iande. For thys cytie (because it standeth iust in the myddes of the Ilande,
-               and is therfore moste mete for the embassadours of all partes of the realme) is
-               taken for the chiefe and head cytie. The precinctes and boundes of the shieres be
-               so commodiously appoynted out, and set furth for the cyties, that neuer a one a of
-               them all hath of any~ syde lesse then xx. myles of grounde, and of som syde also
-               muche more 1, as of that part where the cyties be of farther distaunce a sonder.
-               None of the cities desire to enlarge the boundes and lymites of their shieres 1•
-               For they count them selfes rather the good husbandes, then the owners of their
-               landes. </p>
-            </div>
+               large and wyde sea, </seg></p>
+         </div>
       </body>
   </text>
 </TEI>
