@@ -1,267 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Update schema -->
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="Schema%20Utopia.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="out/Schema%20Utopia.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-	<!--This edition shows all editions as part of a critical apparatus-->
-   <teiHeader>
-      <!-- essential -->
-      <fileDesc>
-         <!-- essential -->
-         <titleStmt>
-            <!-- essential -->
-            <title>A Digital Edition of the 1637 Spanish translation of Thomas More's Utopia</title>
-            <editor> M.ª Inmaculada Ureña Asensio</editor>
-         </titleStmt>
-         <!-- essential -->
-         <publicationStmt>
-            <!-- essential -->
-            <p>Publication Information</p>
-         </publicationStmt>
-         <!-- essential -->
-         <sourceDesc>
-            <!-- essential -->
-            <p>Information about the source</p>
-         </sourceDesc>
-      </fileDesc>
-   </teiHeader>
+<!-- All editions in critical apparatus -->
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>A Digital Edition of the 1637 Spanish translation of Thomas More's Utopia</title>
+               <editor> M.ª Inmaculada Ureña Asensio</editor>
+            </titleStmt>
+            <publicationStmt>
+               <p>Encoding Chapter 1 for my thesis dissertation</p>
+            </publicationStmt>
+            <sourceDesc>
+               <p>The bibliographical resources are:
+                  Utopia de Thomas Moro (1637) translated by Gerónimo de Medinilla. 
+                  The Utopia of Sir Thomas More (1895) edited by Joseph Lupton. Bilingual edition (Latin and sixteenth-century English translation)</p>
+            </sourceDesc>
+         </fileDesc>
+      </teiHeader>
    <text>
       <body>
-         <div type="Chapter" n="1">
-            <milestone unit="title"/>
             <head type="title">
                <app>
-                  <lem>RELACION, QVE HIZO <lb/>Rafael Hithlodeo, excelẽte varõ, <lb/>del felice
-                     eſtado dela republica de <lb/>VTOPIA, ordenada por Thomas <lb/>Moro, Vizcõde,
-                     Ciudadano de la <lb/>inſigne Ciudad de Lon- <lb/>dres en Inglaterra. </lem>
-                  <rdg xml:id="mod01">Relación que hizo Rafael Hithlodeo, excelente varón, del feliz
+                  <base>RELACION, QVE HIZO Rafael Hithlodeo, excelẽte varõ, del felice
+                     eſtado dela republica de VTOPIA, ordenada por Thomas Moro, Vizcõde,
+                     Ciudadano de la inſigne Ciudad de Londres en Inglaterra. </base>
+                  <translation xml:lang="Spanish">Relación que hizo Rafael Hithlodeo, excelente varón, del feliz
                      estado de la república de Utopia, ordenada por Thomas Moro, vizconde, ciudadano
-                     de la insigne ciudad de Londres en Inglaterra.</rdg>
-                  <rdg xml:id="lat01"><lb/>SERMONIS QVEM <lb/>RAPHAEL HYTHLODAEVS DE OPTI <lb/>MO
-                     REIP. STATV HABVIT, LI <lb/>BER SECVNDVS, PER THO <lb/>MAM MORVM CIVEM <lb/>ET
-                     VICECOMITEM <lb/>LONDINENSEM.</rdg>
-                  <rdg xml:id="eng01"><lb/>The second <lb/>Boke of the communication <lb/>of Raphael
-                     Hythlodaye, concernyng <lb/>the best state of a common wealthe: con-
-                     <lb/>teynyng the discription of Vtopia, <lb/>with a large declaration of the
-                     <lb/>Godly gouernement, and of <lb/>all the good lawes and <lb/>orders of the
-                     same <lb/>Ilande.</rdg>
+                     de la insigne ciudad de Londres en Inglaterra.</translation>
+                  <original xml:lang="Latin"> SERMONIS QVEM RAPHAEL HYTHLODAEVS DE OPTIMO
+                     REIP. STATV HABVIT, LIBER SECVNDVS, PER THOMAM MORVM CIVEM ET
+                     VICECOMITEM LONDINENSEM.</original>
+                  <translation xml:lang="English">The second Boke of the communication of Raphael
+                     Hythlodaye, concernyng the best state of a common wealthe: conteynyng the discription of Vtopia, with a large declaration of the
+                    Godly gouernement, and of all the good lawes and orders of the same Ilande.</translation>
                </app>
             </head>
-            <milestone unit="chapter" n="1"/>
-            <head type="chapter">            
+         <div type="Chapter" n="1">
+            <head type="chapter">
                <app>
-                  <lem>DESCRIPCION DE LA ISLA. Cap. I </lem>
-                  <rdg xml:id="mod02">Descripción de la isla. Capítulo I</rdg>
-                  <rdg xml:id="lat02">*No title* </rdg>
-                  <rdg xml:id="eng02">*No title* </rdg>
+                  <base>DESCRIPCION DE LA ISLA. Cap. I </base>
+                  <modernization xml:lang="Spanish">Descripción de la isla. Capítulo I</modernization>
+                  <translation xml:lang="Latin"> <!-- no title --></translation>
+                  <translation xml:lang="English"> <!-- no title --> </translation>
                </app>
             </head>
-            <milestone unit="text" n="1"/>
-            <ab xml:id="fact01">
-               <!-- complete chapter here -->
-               <pb n="Ir"/>
-               <lb/>La Isla de los Vtopienſes, en el me- 
-               <lb/>dio ſe eſtiẽnde a docientos mil paſ-
-               <lb/>ſos, i por larguiſsimo eſpacio no ſe 
-               <lb/>eſtrecha conſiderablement; mas al
-               <lb/>fin de entrambos aidos cabos ſe va 
-               <lb/>enſangoſtando: i eſtas puntas en cir
-               <lb/>cunferẽcia de cinquenta mil paſſos, dexan la Isla 
-               <lb/>en forma de Luna nueva. Eſtas extremidades <pb n="Iv"/>
-               <lb/>convatidas del mar ſe hallan diſtantes la una de 
-               <lb/>la otra otros onze mil; i
-               el mar defendido de los 
-               <lb/>vientos. Entre eſtos braços forma un apaci- 
-               <lb/>ble lago, dexando un puerto acomodado, deſde 
-               <lb/>donde por ſu oportunidad embian ſus
-               flotas a <lb/>otras Provincias, i Paiſes. Las gargantas de las <lb/>entradas de la
-               una parte con los bancos, i bados; <lb/>i de la otra con diſsimulados eſcollos ponen
-               eſ- <lb/>panto al que pretẽde entrar, como enemigo. Ca- <lb/>si en el medio deſte
-               eſpacio ſe vee otra roca, no <lb/>tan peligroſa: en cuya eminencia han fabrica-
-               <lb/>do un fuerte, donde tienen preſidio. Hallanſe <lb/>otros muchos eſcollos
-               ocultos, i por eſto daño- <lb/>ſos: ellos ſolamente tienen conocimiento de a-
-               <lb/>quellos canales: de donde procede que raras ve- <lb/>zes el eſtrangero, que no
-               ſea aviſado de alguno <lb/>de la Vtopia, pueda penetrallos , i quando con a- <lb/>fan
-               entre ſin rieſgo, no governandoſe por ciertas <lb/>guias pueſtas en la ribera, vendra
-               qualquiera grã <lb/>de enemiga armada a dar al trabes. De la otra <lb/>parte ai un
-               puerto baſtantemẽte frequentado; i el <lb/>deſembarcadero fortificado por arte, i
-               naturale- <lb/>za: de manera, que poca gente de guerra pondrã <lb/>en retirada i
-               rebatiran el impetu de copioſo exer <lb/>cito. Ai opinion (i la apariencia del lugar
-               lo mueſ <lb/>tra) que aquella tierra en lo antiguo eſtava rodea- <lb/>da del mar. Mas
-               Vtopo, de quien tomò nom- <lb/>bre la Isla, por averla conquiſtado (porque pri-
-               <lb/>mero ſe llamava Abraxa) reduxo aquella muche- <pb n="2r"/>
-               <lb/>dumbre ruſtica, i groſſera a eſta manera de vivir <lb/>humana, i civil, qual
-               ſigue todo el linaje de los <lb/>hõbres. Cortò un Iſthmo de diez mil paſſos, por
-               <lb/>el qual eſtava Vtopia continente con la tierra fir <lb/>me, con que quedò hecha
-               Isla. Aviendo conſtri- <lb/>ñido, no ſolo a los moradores antiguos, mas tam <lb/>bien
-               a ſus ſoldados, por no cauſar afrenta a aque <lb/>llos: i con tanto numero de
-               operarios en breviſ- <lb/>ſimo tiempo acabò el trabajo, dexando admira- <lb/>dos los
-               pueblos vezinos, que al principio burla- <lb/>van del intento. Ai en eſta Isla
-               cinquenta i qua- <lb/>tro Ciudades, conformes en lengua, inſtitutos, <lb/>i leyes, i
-               caſi a un modelo fabricadas, en quanto <lb/>el ſitio lo permite. Las mas cercanas
-               eſtan deſvia <lb/>das veinte i quatro mil paſſos; mas ninguna ſe ha <lb/>lla tã
-               apartada una de otra, que en un dia no pue <lb/>da hazer jornada a ellas un peon.
-               Tres Ciudada- <lb/>nos expertos, i ancianos de cada una deſtas Ciu <lb/>dades todos
-               los años concurren en Amauroto, la <lb/>qual por eſtar aſſentada en medio de la Isla,
-               es a <lb/>todos cōmoda, i tenida por principal, i Cabeça, <lb/>donde tratan de la
-               cauſa comun i publica de toda <lb/>la Vtopia. Las Ciudades no tienen de termino
-               <lb/>paſſados de veinte mil paſſos en contorno, algu- <lb/>nas mas, conforme eſtan
-               deſviadas, i apartadas <lb/>mas, o menos entre ſi, ninguna dellas deſſea eſ-
-               <lb/>tender, o dilatar ſu diſtrito, juzgandoſe antes vſu <lb/>frutuarios labradores
-               de los campos, que ſe- <lb/>ñores dellos. Tienen alquerias mui prevenidas </ab>
-            <ab xml:id="modt01">
-               <pb n="I"/> La Isla de los Utopienses en el medio se extiende a doscientos mil pasos,
-               y por larguísimo espacio no se estrecha considerablemente; mas al fin de <app>
-                  <lem/>
-                  <!-- the original text -->
-                  <rdg type="modernization">entre ambos cabos</rdg>
-                  <rdg type="1790">entrambos cados</rdg>
-                  <rdg type="1805">=</rdg>
-               </app> se va <app>
-                  <lem/>
-                  <rdg type="modernization">ensangostando,</rdg>
-                  <rdg type="1790">angostando</rdg>
-                  <rdg type="1805">=</rdg>
-               </app> y estas puntas en circunferencia de cincuenta mil pasos dejan la Isla en forma
-               de Luna nueva. Estas extremidades combatidas del mar se hallan distantes la una de la
-               otra otros once mil y el mar defendido de los vientos. Entre estos brazos forma un
-               apacible lago, dejando un puerto acomodado desde donde, por su oportunidad, envían
-               sus flotas a otras provincias y países. Las gargantas de las entradas de la una parte
-               con los bancos y bados y de la otra, con disimulados escollos, ponen espanto al que
-               pretende entrar como enemigo. Casi en el medio de este espacio se ve otra roca no tan
-               peligrosa, en cuya eminencia han fabricado un fuerte, donde tienen presidio. Hállanse
-               otros muchos escollos ocultos, y por esto dañosos. Ellos solamente tienen
-               conocimiento de aquellos canales de donde procede que raras veces el extranjero que
-               no sea avisado de alguno de la Utopía pueda penetrallos, y cuando con afán entre sin
-               riesgo, no gobernándose por ciertas guías puestas en la ribera, vendrá cualquier gran
-               enemiga armada a dar al través. De la otra parte, hay un puerto bastantemente
-               frecuentado y el desembarcadero fortificado por arte y naturaleza, de manera que poca
-               gente de guerra pondrán en retirada y rebatirán el ímpetu de copioso ejército. Hay
-               opinión (y la apariencia del lugar lo muestra) que aquella tierra en lo antiguo
-               estaba rodeada del mar. Mas Utopo, de quien tomó nombre la Isla por haberla
-               conquistado (porque primero se llamaba Abraxa), redujo aquella muchedumbre rústica y
-               grosera a esta manera de vivir humana y civil, cual sigue todo el linaje de los
-               hombres. Cortó un istmo de diez mil pasos por el cual estaba Utopía continente con la
-               tierra firme, con que quedó hecha Isla. Habiendo constreñido no solo a los moradores
-               antiguos, mas también a sus soldados, por no causar afrenta a aquellos. Y con tanto
-               número de operarios en brevísimo tiempo acabó el trabajo, dejando admirados los
-               pueblos vecinos, que al principio burlaban del intento. Hay en esta Isla cincuenta y
-               cuatro ciudades, conformes en lengua, institutos, y leyes, y casi a un modelo
-               fabricadas, en cuanto el sitio lo permite. Las más cercanas están desviadas
-               veinticuatro mil pasos, mas ninguna se halla tan apartada una de otra, que en un día
-               no pueda hacer jornada a ellas un peón. Tres ciudadanos expertos y ancianos de cada
-               una destas ciudades todos los años concurren en Amauroto, la cual, por estar asentada
-               en medio de la Isla, es a todos cómoda y tenida por principal y cabeza, donde tratan
-               de la causa común y pública de toda la Utopía. Las ciudades no tienen de término
-               pasados de veinte mil pasos en contorno, algunas más, conforme están desviadas y
-               apartadas más o menos entre sí, ninguna dellas desea extender, o dilatar su distrito,
-               juzgándose antes usufructuarios labradores de los campos que señores dellos. Tienen
-               alquerías muy prevenidas</ab>
-            <!-- page book from the original edition = Lupton 1985 p. 115 -->
-            <ab xml:id="latt01"><pb n="115"/>VTOPIENSIVM INSVLA in media sui parte (nam hac
-               latissima est) millia passuum ducenta porrigitur, magnumque per insulae spatium non
-               multo angustior, fines uersus paulatim utrinque <pb n="116"/> tenuatur. hi uelut
-               circunducti circino quingentorum ambitu millium, insulam totam in lunae speciem
-               renascentis effigiant.
-               <!-- what about marginalia? <add>Situs et forma Vtopiae nouae insulae </add>--> Cuius
-               cornua fretum interfluens millibus passuum plus minus undecim dirimit, ac per ingens
-               inane diffusum, circumiectu undique terrae prohibitis uentis, uasti in morem lacus,
-               stagnans magis quam saeuiens, omnem prope eius terrae aluum pro portu facit, magnoque
-               hominum usu naues quaqua uersus transmittit. fauces | hinc uadis inde saxis
-               formidolosae. <pb n="117"/> In medio ferme interstitia una rupes eminet, eoque
-               innoxia, cui inaedificatam turrim praesidio tenent: caeterae latentes et insidiosae.
-               Canales solis ipsis noti ; atque ideo non Locu natlll'll tu- anico prae. temere
-               accidit ut exterus quisquam hunc in sinum, udio defenditar. nisi Vtopiano duce,
-               penetret; ut in quem uix ipsis tutus ingressus est, nisi signis quibusdam e litore
-               uiam regentibus. His in diuersa translatis loca, hos- Stratacema rs matati81igniL
-               tium quamlibet numerosam classem facile in pemiciem traherenL Ab altera parte non
-               infrequentes portus. At ubique <pb n="118"/> descensus in terram ita natura
-               munitus, aut arte, uta ingentes copiae paucis inde queant propugnatoribus arceri.
-               Caeterum, uti fertur, utique ipsa loci facies prae se fert, ea tellus olim non
-               ambiebatur mari. Sed Vtopus, cuius utpote uictoris nomen Vtopia i~t~~~la ab Vtopoda~.
-               refert insula (nam ante id tempus Abru.a dicebatur) quique rudem atque agrestem
-               turbam ad id, quo nunc caeteros prope mortales antecellit, cultus Hoc: plu ..,...t
-               qum humanitatisql!e perduxit, primo protinus appulsu lothmDm perfodere. uictoria
-               potitus, passuum milia quindecim, qua parte Facile fertlll' q"od tell us continenti
-               adhaesit, exscindend\Jm curauit, ac omnibaac:omm""e e.t.• nla.re circum terram duxit.
-               Quumque ad id operis non incolas modo coegisset (ne contumeliae loco laborem
-               ducerent) <pb n="119"/> sed suos praeterea milites omnes adiungeret, in tantam
-               hominum multitudinem opere distributo, incredibili celeritate res perfecta ;
-               finitiinosque (qui initio uanitatem incoepti riserant) admiratione: successus ac
-               terrore perculerit. . 70 Insula ciuitates habet I quatuor et quinquaginta,
-               OppidaVtopiaelnsula~. [ 721 spatiosas omnes ac magnificas, lingua, moribus, in-
-               Similitudo concor· stitutis, legibus prorsus iisdem. idem situs omnium, diam faciL
-               eadem ubique quatenus per locum licet rerum facies. Harum quae pro:x:imae inter sunt
-               b, millia quatuor Vrbham inter..,....,. diocre intenuallllm. ac uiginti separant.
-               Nulla rursus est tam deserta, e qua non ad aliam urbem pedibus queat unius ·itinere
-               diei perueniri. Ciues quaque ex urbe terni senes ac rerum periti tractatum de <pb
-                  n="120"/> rebus insulae communibus quotannis conueniunt Amaurotum. Nam ea urbs
-               (quod tanquam in umbilico terrae sita maxime iacet omnium partium legatis opportuna)
-               prima princepsque l>islriblltio qronam. habetur. Agri ita commode ciuitatibus
-               assignati sunt, ut ab nulla parte minus soli quam Xi: a passuum millia una quaeuis
-               habeat, ab aliqua multo etiam amplius ; uidelicet qua parte At hine hodie pestito
-               longius urbes inter se disiunguntur. </ab>
-            <p xml:id="engt01"><pb n="115"/>
-               <!-- PARAGRAPHS --> The Ilande of Vtopia conteyneth in breadthe in the myddell part
-               of it (for there it is brodest) CC. miles. Whiche bredthe continueth through the
-               moste parte of the Iande, sauyng that by lytle and lytle it commeth in and <pb
-                  n="116"/>
-               <!-- PARAGRAPHS  --> waxeth narrower towardes both the endes. Whiche fetch- ynge
-               about a circuite or compasse of .v.c. myles, do fas- sion the hole Ilande lyke to the
-               newe mone. Betwene thys two corners the sea runneth in, diuydyng them a sonder by the
-               distaunce of .xi. miles or there aboutes, and there surmounteth into a large and wyde
-               sea 3, which, by reason that the Iande of euery syde compasseth it about, and
-               shiltreth it from the windes, is not rough nor mountith not with great waues, but
-               almost floweth quietlye, not muche vnlike a great standing powle ; and maketh almoste
-               al the space within the bellye of the Iande in maner of a hauen; and to the great
-               commoditie of the Inhabitauntes receaueth in shyppes towardes euery parte of the
-               lande. The forefrontes or frontiers of the .ii. corners, what wythe fordys and
-               shelues, and what with rockes, be very ieoperd- ous and daungerous. In the middel
-               distaunce betwene <pb n="117"/> them both standeth vp aboue the water a great rocke,
-               which therfore is nothing perillous bicause it is in sight. Vpon the top of this
-               rocke is a faire and a strong towre builded, which thei holde with a garison of men.
-               Other rockes ther be, that lye • hidde vnder the water, and b therefore be
-               daungerous. The channelles be knowen onely to themselfes. An 1 therfore it seldome
-               chaunceth that any straunger, oneles he be guided by a Vtopian, can come in to this
-               hauen. In so muche that they themselfes could skaselie entre without ieoperdie, but
-               that their way is directed and ruled by certaine Iande markes standing on the shore.
-               By turning, translatynge 2, and remouinge this markes into other places, they maye
-               destroye their enemies nauies, be thei neuer so many 1• ·The out side ofo the Iande
-               is also full of hauens; but the landing is so surely <pb n="118"/> defenced •, what
-               by nature and what by workmanshyp of mans hande, that a fewe defenders maye dryue
-               backe many armies. </p>
-            <p> Howbeit, as they saye, and as the fassion of the place it selfe doth partely shewe,
-               it was not euer compassed about with the sea. But kyng Vtopus, whose name as con·
-               querour the Iland beereth (for before that b tyme it was called Abraxa 1), which also
-               brought the rude and wild people to that excellent perfection, in al good fassions,
-               humanitie, and ciuile gentilnes, wherin they now go be· yond al the people of the
-               world ; euen at his first arriuinge and enteringe vpon the lande, furth with
-               obteynynge the victory caused .xv. myles space of vplandyshe grounde, where the sea
-               had no passage, to be cut and dygged vp ; and so brought the sea rounde aboute the
-               lande. He set to thys worke not only the inhabitauntes of the Ilande (because they
-               should not thynke it done in contumelye and <pb n="119"/> despyte), but also all hys
-               owne soldiours. Thus the worke, beyng diuyded into so great a numbre of workemen, was
-               with exceding maruelous spede dyspatched. In so muche that the borderers, whiche at
-               the fyrst began to mocke and to gieste at thys vayne enterpryse, then turned theyr
-               laughter to marueyle at the successe, and to feare. </p>
-            <p> There be in the Ilande .liiii.1 large and faire cities or shiere townes, agreyng all
-               together in one tonge, in lyke maners, institucions, and Iawes. They be all set and
-               situate a lyke, and in all poyntes fashioned a lyke, as farfurth as the place or
-               plotte suffereth. Of thies cyties they that be nighest together be xxiiii. myles a
-               sonder. Again there is none of them distaunt from the next aboue one dayes iorneye a
-               fote. </p>
-            <p> There cum yearly to Amaurote out of euery cytie .iii. olde men, wyse and well
-               experienced, there to entreate and <pb n="120"/> debate of the common matters of the
-               Iande. For thys cytie (because it standeth iust in the myddes of the Ilande, and is
-               therfore moste mete for the embassadours of all partes of the realme) is taken for
-               the chiefe and head cytie. The precinctes and boundes of the shieres be so
-               commodiously appoynted out, and set furth for the cyties, that neuer a one a of them
-               all hath of any~ syde lesse then xx. myles of grounde, and of som syde also muche
-               more 1, as of that part where the cyties be of farther distaunce a sonder. None of
-               the cities desire to enlarge the boundes and lymites of their shieres 1• For they
-               count them selfes rather the good husbandes, then the owners of their landes. </p>
-         </div>
+            <ab type="chapter" n="1">
+               <seg n="1.1"> <app>
+                  <base>La Isla de los Vtopienſes, en el medio ſe eſtiẽnde a docientos mil paſſos, i por larguiſsimo eſpacio no ſe eſtrecha conſiderablement;
+                  </base>
+                  <modernization xml:lang="Spanish"> La Isla de los Utopienses en el medio se extiende a doscientos mil
+                     pasos, y por larguísimo espacio no se estrecha considerablemente;
+                  <original xml:lang="Latin"> VTOPIENSIVM INSVLA in media sui parte (nam hac latissima est) millia passuum
+                     ducenta porrigitur, magnumque per insulae spatium non multo angustior,
+                  </original>
+                  <translation xml:lang="English"> The Ilande of Vtopia conteyneth in breadthe in the myddell
+                     part of it (for there it is brodest) CC. miles. 
+                  </translation>
+               </app></seg> 
+               <ab type="chapter" n="1">
+                  <seg n="1.2"> <app>
+                     <base> mas al
+                        fin de entrambos aidos cabos ſe va enſangoſtando: i eſtas puntas en circunferẽcia de cinquenta mil paſſos, dexan la Isla en forma de Luna nueva.
+                     </base>
+                     <modernization xml:lang="Spanish"> mas al fin de entre ambos cabos se va ensangostando, 
+                        y estas puntas en circunferencia de cincuenta mil pasos dejan la Isla en formade Luna nueva.
+                     </modernization>
+                     <original xml:lang="Latin"> fines
+                        uersus paulatim utrinque tenuatur. hi uelut circunducti circinoquingentorum ambitu millium, insulam totam in lunae speciem renascentis effigiant. 
+                        Cuius cornua fretum interfluens millibus passuum plus minus undecim dirimit
+                     </original>
+                     <translation xml:lang="English"> Whiche bredthe continueth through
+                        the moste parte of the Iande, sauyng that by lytle and lytle it commeth in and waxeth narrower towardes both the endes.
+                     </translation>
+                  </app></seg> 
+               <seg n="1.3"> <app>
+                  <base> Eſtas extremidades convatidas del mar ſe hallan diſtantes la una de la otra otros onze mil; i
+                     el mar defendido de los vientos.</base>
+                  <modernization xml:lang="Spanish">Estas extremidades combatidas del mar se hallan distantes la una de la
+                     otra otros once mil y el mar defendido de los vientos.</modernization>
+                  <original xml:lang="Latin">ac per ingens inane diffusum, circumiectu undique terrae prohibitis uentis, uasti in morem lacus,
+                     stagnans magis quam saeuiens,
+                  </original>
+                  <translation xml:lang="English">Betwene thys two corners the sea runneth in, diuydyng them a sonder by the
+                     distaunce of .xi. miles or there aboutes, and there surmounteth into a large and wyde
+                     sea</translation>
+               </app></seg>
+            </ab>  
+          </div>
       </body>
    </text>
 </TEI>
