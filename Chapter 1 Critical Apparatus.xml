@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="out/Schema%20Utopia.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="out/Schema%20Utopia.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-<!-- All editions in critical apparatus -->
       <teiHeader>
          <fileDesc>
             <titleStmt>
@@ -20,72 +19,94 @@
       </teiHeader>
    <text>
       <body>
+          <!-- Title of Book II-->
             <head type="title">
                <app>
-                  <base>RELACION, QVE HIZO Rafael Hithlodeo, excelẽte varõ, del felice
+                  <base xml:lang="es">RELACION, QVE HIZO Rafael Hithlodeo, excelẽte varõ, del felice
                      eſtado dela republica de VTOPIA, ordenada por Thomas Moro, Vizcõde,
                      Ciudadano de la inſigne Ciudad de Londres en Inglaterra. </base>
-                  <translation xml:lang="Spanish">Relación que hizo Rafael Hithlodeo, excelente varón, del feliz
+                  <translation xml:lang="es">Relación que hizo Rafael Hithlodeo, excelente varón, del feliz
                      estado de la república de Utopia, ordenada por Thomas Moro, vizconde, ciudadano
                      de la insigne ciudad de Londres en Inglaterra.</translation>
-                  <original xml:lang="Latin"> SERMONIS QVEM RAPHAEL HYTHLODAEVS DE OPTIMO
+                  <original xml:lang="la"> SERMONIS QVEM RAPHAEL HYTHLODAEVS DE OPTIMO
                      REIP. STATV HABVIT, LIBER SECVNDVS, PER THOMAM MORVM CIVEM ET
                      VICECOMITEM LONDINENSEM.</original>
-                  <translation xml:lang="English">The second Boke of the communication of Raphael
+                  <translation xml:lang="en">The second Boke of the communication of Raphael
                      Hythlodaye, concernyng the best state of a common wealthe: conteynyng the discription of Vtopia, with a large declaration of the
                     Godly gouernement, and of all the good lawes and orders of the same Ilande.</translation>
                </app>
             </head>
+            <!--Chapter 1 starts here-->
          <div type="Chapter" n="1">
+            <!--Title of the chapter-->
             <head type="chapter">
                <app>
-                  <base>DESCRIPCION DE LA ISLA. Cap. I </base>
-                  <modernization xml:lang="Spanish">Descripción de la isla. Capítulo I</modernization>
-                  <translation xml:lang="Latin"> <!-- no title --></translation>
+                  <base xml:lang="es">DESCRIPCION DE LA ISLA. Cap. I </base>
+                  <modernization xml:lang="es">Descripción de la isla. Capítulo I</modernization>
+                  <original xml:lang="la"> <!-- no title --></original>
                   <translation xml:lang="English"> <!-- no title --> </translation>
                </app>
             </head>
-            <ab type="chapter" n="1">
-               <seg n="1.1"> <app>
-                  <base>La Isla de los Vtopienſes, en el medio ſe eſtiẽnde a docientos mil paſſos, i por larguiſsimo eſpacio no ſe eſtrecha conſiderablement;
-                  </base>
-                  <modernization xml:lang="Spanish"> La Isla de los Utopienses en el medio se extiende a doscientos mil
-                     pasos, y por larguísimo espacio no se estrecha considerablemente; </modernization>
-                  <original xml:lang="Latin"> VTOPIENSIVM INSVLA in media sui parte (nam hac latissima est) millia passuum
-                     ducenta porrigitur, magnumque per insulae spatium non multo angustior,
-                  </original>
-                  <translation xml:lang="English"> The Ilande of Vtopia conteyneth in breadthe in the myddell
-                     part of it (for there it is brodest) CC. miles. 
-                  </translation>
-               </app></seg> 
-                <seg n="1.2"> <app>
-                     <base> mas al
-                        fin de entrambos aidos cabos ſe va enſangoſtando: i eſtas puntas en circunferẽcia de cinquenta mil paſſos, dexan la Isla en forma de Luna nueva.
-                     </base>
-                     <modernization xml:lang="Spanish"> mas al fin de entre ambos cabos se va ensangostando, 
-                        y estas puntas en circunferencia de cincuenta mil pasos dejan la Isla en formade Luna nueva.
-                     </modernization>
-                     <original xml:lang="Latin"> fines
-                        uersus paulatim utrinque tenuatur. hi uelut circunducti circinoquingentorum ambitu millium, insulam totam in lunae speciem renascentis effigiant. 
-                        Cuius cornua fretum interfluens millibus passuum plus minus undecim dirimit
-                     </original>
-                     <translation xml:lang="English"> Whiche bredthe continueth through
-                        the moste parte of the Iande, sauyng that by lytle and lytle it commeth in and waxeth narrower towardes both the endes.
-                     </translation>
-                  </app></seg> 
-               <seg n="1.3"> <app>
-                  <base> Eſtas extremidades convatidas del mar ſe hallan diſtantes la una de la otra otros onze mil; i
-                     el mar defendido de los vientos.</base>
-                  <modernization xml:lang="Spanish">Estas extremidades combatidas del mar se hallan distantes la una de la
-                     otra otros once mil y el mar defendido de los vientos.</modernization>
-                  <original xml:lang="Latin">ac per ingens inane diffusum, circumiectu undique terrae prohibitis uentis, uasti in morem lacus,
-                     stagnans magis quam saeuiens,
-                  </original>
-                  <translation xml:lang="English">Betwene thys two corners the sea runneth in, diuydyng them a sonder by the
-                     distaunce of .xi. miles or there aboutes, and there surmounteth into a large and wyde
-                     sea</translation>
-               </app></seg>
-            </ab>  
+               <!--Text-->
+            <ab>
+               <!--Sentences-->
+               <seg n="1.1." type="sentence"> 
+                   <app>
+                     <base xml:lang= "es">La Isla de los Vtopienſes, en el medio ſe eſtiẽnde a docientos mil paſſos, i por larguiſsimo eſpacio no ſe eſtrecha conſiderablement; mas alfin de entrambos aidos cabos ſe va enſangoſtando: i eſtas puntas en circunferẽcia de cinquenta mil paſſos, dexan la Isla en forma de Luna nueva.</base>
+                     <modernization xml:lang="es"> La Isla de los Utopienses en el medio se extiende a doscientos mil pasos, y por larguísimo espacio no se estrecha considerablemente; mas al fin de entre ambos cabos se va ensangostando, y estas puntas en circunferencia de cincuenta mil pasos dejan la Isla en forma de Luna nueva.</modernization>
+                     <original xml:lang="la"> Vtopiensium insula in media sui parte (nam hac latissima est) millia passuum ducenta porrigitur, magnumque per insulae spatium non multo angustior, fines uersus paulatim utrinque tenuatur. hi uelut circunducti circino quingentorum ambitu millium, insulam totam in lunae speciem renascentis effigiant.</original>
+                     <translation xml:lang="en"> The Ilande of Vtopia conteyneth in breadthe in the myddell part of it (for there it is brodest) CC miles. Whiche bredthe continueth through the moste parte of the lande, sauyng that by lytle and lytle it commeth in and waxeth narrower towardes both the endes. Whiche fetchynge about a circuite or compasse of vc myles, do fassion the hole Ilande lyke to the newe mone.</translation>
+                  </app>
+               </seg> 
+            <seg n="1.2." type="sentence"> 
+               <app>
+                  <base xml:lang= "es">Eſtas extremidades convatidas del mar ſe hallan diſtantes la una dela otra otros onze mil; i el mar defendido de los vientos.</base>
+                  <modernization xml:lang="es"> Estas extremidades combatidas del mar se hallan distantes la una de la otra otros once mil y el mar defendido de los vientos.</modernization>
+                  <original xml:lang="la"> Cuius cornua fretum interfluens millibus passuum plus minus undecim dirimit, ac per ingens inane diffusum, circumiectu undique terrae prohibitis uentis, </original>
+                  <translation xml:lang="en"> Betwene thys two corners the sea runneth in, diuydyng them a sonder by the distaunce of xi miles or there aboutes, and there surmounteth into a large and wyde sea, which, by reason that the lande of euery syde compasseth it about, and shiltreth it from the windes,</translation>
+               </app>
+            </seg>  
+            <seg n="1.3." type="sentence"> 
+               <app>
+                  <base xml:lang= "es">Entre eſtos braços forma un apacible lago, dexando un puerto acomodado, deſde donde por ſu oportunidad embian ſus flotas aotras Provincias, i Paiſes.</base>
+                  <modernization xml:lang="es"> Entre estos brazos forma un apacible lago, dejando un puerto acomodado desde donde, por su oportunidad, envían sus flotas a otras provincias y países.</modernization>
+                  <original xml:lang="la"> uasti in morem lacus, stagnans magis quam saeuiens, omnem prope eius terrae aluum pro portu facit, magnoque hominum usu naues quaqua uersus transmittit.</original>
+                  <translation xml:lang="en">  is not rough nor mountith not with great waues, but almost floweth quietlye, not muche vnlike a great standing powle; and maketh almoste al the space within the bellye of the lande in maner of a hauen; and to the great commoditie of the lnhabitauntes receaueth in shyppes towardes euery parte of the lande.</translation>
+               </app>
+            </seg> 
+            <seg n="1.4." type="sentence"> 
+               <app>
+                  <base xml:lang= "es">Las gargantas de las entradas de la una parte con los bancos, i bados; i de la otra con diſsimulados eſcollos ponen eſpanto al que pretẽde entrar, como enemigo.</base>
+                  <modernization xml:lang="es"> Las gargantas de las entradas de la una parte con los bancos y bados y de la otra, con disimulados escollos, ponen espanto al que pretende entrar como enemigo.</modernization>
+                  <original xml:lang="la"> fauces hinc uadis inde saxis formidolosae. </original>
+                  <translation xml:lang="en"> The forefrontes or frontiers of the ii corners, what wythe fordys and shelues, and what with rockes, be very ieoperdous and daungerous.</translation>
+               </app>
+            </seg> 
+            <seg n="1.5." type="sentence"> 
+               <app>
+                  <base xml:lang= "es">Casi en el medio deſte eſpacio ſe vee otra roca, notan peligroſa: en cuya eminencia han fabricado un fuerte, donde tienen preſidio.</base>
+                  <modernization xml:lang="es">Casi en el medio deſte eſpacio ſe vee otra roca, notan peligroſa: en cuya eminencia han fabricado un fuerte, donde tienen preſidio.</modernization>
+                  <original xml:lang="la"> In medio ferme interstitio una rupes eminet, eoque innoxia, cui inaedificatam turrim praesidio tenent: caeterae latentes et insidiosae.</original>
+                  <translation xml:lang="en"> In the middel distaunce between them both standeth vp aboue the water a great rocke, which therfore is nothing perillous bicause it is in sight. Vpon the top of this rocke is a faire and a strong towre builded, which thei holde with a garison of men.</translation>
+               </app>
+            </seg> 
+            <seg n="1.6." type="sentence"> 
+               <app>
+                  <base xml:lang= "es">Hallanſe otros muchos eſcollos ocultos, i por eſto dañoſos: ellos ſolamente tienen conocimiento de aquellos canales: de donde procede que raras vezes el eſtrangero, que no ſea aviſado de alguno de la Vtopia, pueda penetrallos, i quando con afan entre ſin rieſgo, no governandoſe por ciertasguias pueſtas en la ribera, vendra qualquiera grãde enemiga armada a dar al trabes.</base>
+                  <modernization xml:lang="es"> Hállanse otros muchos escollos ocultos, y por esto dañosos. Ellos solamente tienen conocimiento de aquellos canales de donde procede que raras veces el extranjero que no sea avisado de alguno de la Utopía pueda penetrallos, y cuando con afán entre sin riesgo, no gobernándose por ciertas guías puestas en la ribera, vendrá cualquier gran enemiga armada a dar al través.</modernization>
+                  <original xml:lang="la"> Canales solis ipsis noti; atque ideo non temere accidit ut exterus quisquam hunc in sinum, nisi Vtopiano duce, penetret; ut in quern uix ipsis tutus ingressus est, nisi signis quibusdam e litore uiam regentibus. His in diuersa translatis loca, hostium quamlibet numerosam classem facile in pemiciem traherent.</original>
+                  <translation xml:lang="en"> Other rockes ther be, that lye hidde vnder the water, and therefore be daungerous. The channelles be knowen onely to themselfes. An therfore it seldome chaunceth that any straunger, oneles he be guided by a Vtopian, can come in to this hauen. In so muche that they themselfes could skaselie entre without ieoperdie, but that their way is directed and ruled by certaine lande markes standing on the shore. By turning, translatynge, and remouinge this markes into other places, they maye destroye their enemies nauies, be thei neuer so many. </translation>
+               </app>
+            </seg> 
+            <seg n="1.7." type="sentence"> 
+               <app>
+                  <base xml:lang= "es">De la otraparte ai un puerto baſtantemẽte frequentado; i el deſembarcadero fortificado por arte, i naturaleza: de manera, que poca gente de guerra pondrã en retirada i rebatiran el impetu de copioſo exercito.</base>
+                  <modernization xml:lang="es">De la otra parte, hay un puerto bastantemente frecuentado y el desembarcadero fortificado por arte y naturaleza, de manera que poca gente de guerra pondrán en retirada y rebatirán el ímpetu de copioso ejército.</modernization>
+                  <original xml:lang="la">Ab altera  parte non infrequentes portus. At ubique descensus in terram ita natura munitus, aut arte, ut ingentes copiae paucis inde queant propugnatoribus arceri.</original>
+                  <translation xml:lang="en">The  out side of the lande is also full of hauens; but the landing is so surely defenced, what by nature and what by workmanshyp of mans hande, that a fewe defenders maye dryue backe many armies.</translation>
+               </app>
+            </seg>
+            </ab>     
           </div>
       </body>
    </text>
